@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="757.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetjava.ShowZoneController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DEDEDE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="108.0" layoutY="64.0" text="Show Area">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table1" layoutX="82.0" layoutY="203.0" prefHeight="316.0" prefWidth="680.0" stylesheets="@css.css">
+              <columns>
+                <TableColumn fx:id="column1" prefWidth="338.0" text="Area Name" />
+                <TableColumn fx:id="column2" prefWidth="341.0" text="Stock" />
+              </columns>
+            </TableView>
+            <TextField fx:id="searchbar" layoutX="187.0" layoutY="130.0" prefHeight="28.0" prefWidth="283.0" />
+            <ImageView fitHeight="53.0" fitWidth="39.0" layoutX="134.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loop2_1.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="101.0" layoutY="634.0" mnemonicParsing="false" onAction="#Delete" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #2813dd; -fx-background-radius: 30 30 30 30;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button layoutX="223.0" layoutY="634.0" mnemonicParsing="false" onAction="#updatetableZone" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #2813dd; -fx-background-radius: 30 30 30 30;" text="Update" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
